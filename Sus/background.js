@@ -1,7 +1,7 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.action === "checkURL") {
       const urlToCheck = request.url;
-      const apiKey = "7ea29bc36d28907e72023d19302cb1bcff81f352fa6dce3b802ab91f6f743f99"; // Remove actual API key before push
+      const apiKey = ""; // Remove actual API key before push :3
       const apiUrl = `https://www.virustotal.com/api/v3/urls`;
   
       fetch(apiUrl, {
