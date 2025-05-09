@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Sus",
+  "version": "1.0",
+  "description": "Checks a URL against VirusTotal.",
+  "permissions":["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icons8-hello-kitty-16.png",
+      "48": "images/icons8-hello-kitty-48.png",
+      "128": "images/icons8-hello-kitty-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions":["https://www.virustotal.com/*"]
+  
+}
